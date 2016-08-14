@@ -1,3 +1,3 @@
 # Interpreter
-Compile and run Interpreter executable with two arguments as follows:
-java Interpreter <testfile> <datafile>
+Compile and run Interpreter executable with two arguments as follows:/bre
+java Interpreter testfile datafile
