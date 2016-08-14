@@ -1,0 +1,24 @@
+
+enum TokenKind {
+
+	PROGRAM(1), BEGIN(2), END(3), INT(4), IF(5), THEN(6), ELSE(7), WHILE(8), LOOP(9), READ(10), WRITE(11), SEMICOLON(
+			12), COMMA(13), ASSIGNMENT_OPERATOR(14), NEGATION_OPERATOR(15), LEFT_BRACKET(16), RIGHT_BRACKET(
+					17), AND_OPERATOR(18), OR_OPERATOR(19), LEFT_PARENTHESES(
+							20), RIGHT_PARENTHESES(21), ADDITION_OPERATOR(22), SUBTRACTION_OPERATOR(
+									23), MULTIPLICATION_OPERATOR(24), NON_EQUALITY_TEST(25), EQUALITY_TEST(
+											26), LESS_THAN_TEST(27), GREATER_THAN_TEST(28), LESS_THAN_OR_EQUAL_TEST(
+													29), GREATER_THAN_OR_EQUAL_TEST(30), INTEGER_CONSTANT(
+															31), IDENTIFIER(32), EOF(33), ERROR(34);
+
+	private int tokenNumber;
+
+	private TokenKind(int number) {
+		this.tokenNumber = number;
+	}
+
+	// Getter
+	public int getTokenNumber() {
+		return this.tokenNumber;
+	}
+	
+}
